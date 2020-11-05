@@ -27,20 +27,13 @@ const tarea = {
     
     form = document.getElementById("form").reset();
     e.preventDefault();
-    window.stop()
-    form.preventDefault();
-    form.stopPropagation();
-    
 }
 
 function Get(){
    
-
     tareas = JSON.parse(localStorage.getItem('tareas'))
     espacio = document.getElementById('container');
     espacio.innerHTML= '';
-    
-    
 
     for (i = 0; i < tareas.length; i++){
         let title = tareas[i].title;
@@ -49,12 +42,8 @@ function Get(){
         <div class = 'tarea'> ${title}: <br> ${reminder} <br>
         <a href='#'> <img src = 'delete.png' class='option1' onclick= 'cancel("${title}")'> </a>
         <a href='#'> <img src = 'check.png' class='option2' onclick= 'confirmation("${title}")'> </a>
-        </div>        
-        `)
-        
-       
+        </div>`)
     }
-    
 }
 
 function cancel(title){
@@ -68,7 +57,6 @@ function cancel(title){
             eliminar: {
             text:'si',
             value: true}
-
         }
     })
 
@@ -84,10 +72,7 @@ function cancel(title){
             }
             localStorage.setItem('tareas',JSON.stringify(tareas));
             Get()
-    }})
-
-
-    
+    }}) 
 }
 
 function confirmation(title){
@@ -100,7 +85,6 @@ function confirmation(title){
     }
     localStorage.setItem('tareas',JSON.stringify(tareas));
     Get()
-
 }
 
 let button= document.getElementById("boton-add");
