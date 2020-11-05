@@ -1,6 +1,7 @@
 
 window.onload = Get()
 
+
 function Add(e){
 
 title = document.getElementById("input-title").value;
@@ -25,9 +26,11 @@ const tarea = {
     Get()
     
     form = document.getElementById("form").reset();
+    e.preventDefault();
+    window.stop()
     form.preventDefault();
     form.stopPropagation();
-    e.preventDefault();
+    
 }
 
 function Get(){
@@ -51,8 +54,6 @@ function Get(){
         
        
     }
-
-
     
 }
 
@@ -104,3 +105,4 @@ function confirmation(title){
 
 let button= document.getElementById("boton-add");
 button.addEventListener("click", Add);
+
