@@ -1,6 +1,9 @@
 
 window.onload = Get()
+window.onload = setTimeout(function(){e.stopPropagation}
+,2000)
 
+let e='';
 
 function Add(e){
 
