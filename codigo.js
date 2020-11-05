@@ -31,7 +31,7 @@ const tarea = {
 
 }
 
-function Get(){
+function Get(e){
    
 
     tareas = JSON.parse(localStorage.getItem('tareas'))
@@ -84,6 +84,8 @@ function cancel(title){
             localStorage.setItem('tareas',JSON.stringify(tareas));
             Get()
     }})
+
+    e.preventDefault()
     
 }
 
