@@ -29,7 +29,8 @@ const tarea = {
     Get()
     
     form = document.getElementById("form").reset();
-
+    form.preventDefault();
+    form.stopPropagation();
     e.preventDefault()
     e.stopPropagation()
 
