@@ -1,9 +1,5 @@
 
 window.onload = Get()
-window.onload = setTimeout(function(){e.stopPropagation}
-,2000)
-
-let e='';
 
 function Add(e){
 
@@ -31,13 +27,10 @@ const tarea = {
     form = document.getElementById("form").reset();
     form.preventDefault();
     form.stopPropagation();
-    e.preventDefault()
-    e.stopPropagation()
-
-
+    e.preventDefault();
 }
 
-function Get(e){
+function Get(){
    
 
     tareas = JSON.parse(localStorage.getItem('tareas'))
