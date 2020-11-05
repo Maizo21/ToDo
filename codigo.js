@@ -28,6 +28,8 @@ const tarea = {
     form = document.getElementById("form").reset();
 
     e.preventDefault()
+    e.stopPropagation()
+
 
 }
 
@@ -52,6 +54,7 @@ function Get(e){
         
        
     }
+
 
     
 }
@@ -85,7 +88,7 @@ function cancel(title){
             Get()
     }})
 
-    e.preventDefault()
+
     
 }
 
