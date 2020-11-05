@@ -11,7 +11,7 @@ body {
     display:flex;
     align-content:center;
     justify-content:center;
-    
+    height: 50px;
 }
 
 .title{
@@ -31,15 +31,12 @@ body {
     display: inherit;
     justify-content: inherit;
     align-items: inherit;
-    height: inherit;
+    min-height: calc(100vh - 50px - 121px);
+
 }
 
 h4{
     margin: 5px;
-}
-
-.app{
-    width: 1000px;
 }
 
 .show{
@@ -107,6 +104,7 @@ ul li:hover> ul{
     word-wrap: break-all;
     float: right;
     list-style: none;
+    position: relative;
 }
 
 .tarea{
@@ -135,6 +133,22 @@ ul li:hover> ul{
     transform: scale(0.9);
 }
 
+.footer{
+    clear: both;
+    color: white;
+    text-align: center;
+    height: 100px;
+    background:rgb(0, 0, 0);
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+}
+
+.logo-img{
+    width: 40px;
+}
 
 
 

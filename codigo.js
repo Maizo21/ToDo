@@ -1,6 +1,8 @@
 
-function Add(e){
+window.onload = Get()
 
+
+function Add(e){
 
 title = document.getElementById("input-title").value;
 reminder = document.getElementById("reminder").value;
